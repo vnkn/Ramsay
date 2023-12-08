@@ -1,0 +1,31 @@
+{% extends "layouts/base.html" %}
+{% block title %}Form{% endblock %}
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <body>
+        <div>
+            <div class="input-group-text">
+                <form method="POST">
+                    <label for="budget">Budget:</label>
+                    <br>
+                    <input type="number" id="budget" name="budget" required clas"form-number-input">
+                    <br><br>
+                    <label for="video_url">Video URL:</label>
+                    <br>
+                    <input type="url" id="video_url" name="video_url" required class="form-large-input">
+                    <br><br>
+                    <input type="submit" value="Submit" class="btn">
+                </form>
+            </div>
+        </div>
+    </body>
+{% endblock content %}
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+{% endblock javascripts %}

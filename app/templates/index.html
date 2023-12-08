@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+{% block title %}Recipe Scraper{% endblock %}
+{% block stylesheets %}
+{% endblock stylesheets %}
+{% block content %}
+<body>
+    <div>
+        <div class="centered">
+            <div class="input-group-text">
+                <form method="POST">
+                    <label for="video_url">What would you like to eat?</label>
+                    <br>
+                    <input type="url" id="food_preference" name="food_preference" required class="form-large-input">
+                    <br><br>
+                    <input type="feed-me" value="feed me!" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock content %}
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+{% endblock javascripts %}
